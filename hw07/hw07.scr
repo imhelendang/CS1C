@@ -1,0 +1,161 @@
+Script started on 2022-02-25 18:55:41-05:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="157" LINES="45"]
+# date
+Fri Feb 25 18:55:43 EST 2022
+# ls-  -l
+total 28
+-rw-r--r-- 1 root root   411 Feb 25 18:42 Makefile
+-rw-r--r-- 1 root root  1378 Feb 25 18:36 ManageInventory.cpp
+-rw-r--r-- 1 root root  2038 Feb 25 18:43 ManageInventory.h
+-rw-r--r-- 1 root root 10625 Feb 25 18:55 hw07.cpp
+-rw-r--r-- 1 root root     0 Feb 25 18:55 hw07.scr
+-rw-r--r-- 1 root root   143 Feb 25 18:32 text.txt
+# make all
+g++ -std=c++14 -Wall -g -c ManageInventory.cpp -o ManageInventory.o 
+g++ -std=c++14 -Wall -g hw07.cpp -o hw07 ManageInventory.o
+# ls -l
+total 252
+-rw-r--r-- 1 root root    411 Feb 25 18:42 Makefile
+-rw-r--r-- 1 root root   1378 Feb 25 18:36 ManageInventory.cpp
+-rw-r--r-- 1 root root   2038 Feb 25 18:43 ManageInventory.h
+-rw-r--r-- 1 root root  96416 Feb 25 18:55 ManageInventory.o
+-rwxr-xr-x 1 root root 127688 Feb 25 18:55 hw07
+-rw-r--r-- 1 root root  10625 Feb 25 18:55 hw07.cpp
+-rw-r--r-- 1 root root      0 Feb 25 18:55 hw07.scr
+-rw-r--r-- 1 root root    143 Feb 25 18:32 text.txt
+# valgrind --leak-check=full ./hw07
+==218== Memcheck, a memory error detector
+==218== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==218== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==218== Command: ./hw07
+==218== 
+= WELCOME! Please enter your name for this purhcase: Mark
+[H[2J[3J /* Clear screen command - system("clear"); */
+= For Mark
+= ======================================================================================================== =
+= Items number =  Name of Equipment:                                     =    Cost:   =  Current quanity:  =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #1      =  Nike Basketball Shoes                                  =  $ 145.99  =        22          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #2      =  Under Armour T-shirt                                   =  $ 29.99   =        33          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #3      =  Brooks Running Shoes                                   =  $ 111.44  =        11          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #4      =  Asics Running Shoes                                    =  $ 165.88  =        20          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #5      =  Nike Shorts                                            =  $ 45.77   =        77          =
+= -------------------------------------------------------------------------------------------------------- =
+= Enter 0 to cancel this transaction and exit the menu!                                                    =
+= ======================================================================================================== =
+= Please pick an item (0-5) and the quanity for that item..                                                =
+= For item: 1
+= For quanity: 2
+= 2 Nike Basketball Shoes(s) are added to the cart!
+= Do you want to add another item into your cart? (y/Y or n/N): y
+[H[2J[3J /* Clear screen command - system("clear"); */
+= For Mark
+= ======================================================================================================== =
+= Items number =  Name of Equipment:                                     =    Cost:   =  Current quanity:  =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #1      =  Nike Basketball Shoes                                  =  $ 145.99  =        22          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #2      =  Under Armour T-shirt                                   =  $ 29.99   =        33          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #3      =  Brooks Running Shoes                                   =  $ 111.44  =        11          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #4      =  Asics Running Shoes                                    =  $ 165.88  =        20          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #5      =  Nike Shorts                                            =  $ 45.77   =        77          =
+= -------------------------------------------------------------------------------------------------------- =
+= Enter 0 to cancel this transaction and exit the menu!                                                    =
+= ======================================================================================================== =
+= Please pick an item (0-5) and the quanity for that item..                                                =
+= For item: 2
+= For quanity: 3
+= 3 Under Armour T-shirt(s) are added to the cart!
+= Do you want to add another item into your cart? (y/Y or n/N): y
+[H[2J[3J /* Clear screen command - system("clear"); */
+= For Mark
+= ======================================================================================================== =
+= Items number =  Name of Equipment:                                     =    Cost:   =  Current quanity:  =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #1      =  Nike Basketball Shoes                                  =  $ 145.99  =        22          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #2      =  Under Armour T-shirt                                   =  $ 29.99   =        33          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #3      =  Brooks Running Shoes                                   =  $ 111.44  =        11          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #4      =  Asics Running Shoes                                    =  $ 165.88  =        20          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #5      =  Nike Shorts                                            =  $ 45.77   =        77          =
+= -------------------------------------------------------------------------------------------------------- =
+= Enter 0 to cancel this transaction and exit the menu!                                                    =
+= ======================================================================================================== =
+= Please pick an item (0-5) and the quanity for that item..                                                =
+= For item: 5
+= For quanity: 4
+= 4 Nike Shorts(s) are added to the cart!
+= Do you want to add another item into your cart? (y/Y or n/N): y
+[H[2J[3J /* Clear screen command - system("clear"); */
+= For Mark
+= ======================================================================================================== =
+= Items number =  Name of Equipment:                                     =    Cost:   =  Current quanity:  =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #1      =  Nike Basketball Shoes                                  =  $ 145.99  =        22          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #2      =  Under Armour T-shirt                                   =  $ 29.99   =        33          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #3      =  Brooks Running Shoes                                   =  $ 111.44  =        11          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #4      =  Asics Running Shoes                                    =  $ 165.88  =        20          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #5      =  Nike Shorts                                            =  $ 45.77   =        77          =
+= -------------------------------------------------------------------------------------------------------- =
+= Enter 0 to cancel this transaction and exit the menu!                                                    =
+= ======================================================================================================== =
+= Please pick an item (0-5) and the quanity for that item..                                                =
+= For item: 3
+= For quanity: 1
+= 1 Brooks Running Shoes(s) are added to the cart!
+= Do you want to add another item into your cart? (y/Y or n/N): n
+[H[2J[3J /* Clear screen command - system("clear"); */
+= 					 RECIEPT 					    =
+= ========================================================================================= =
+= For Mark, current have: 								    =
+= Nike Basketball Shoes                                  $ 145.99       2 (x of this items) =
+= Under Armour T-shirt                                   $ 29.99        3 (x of this items) =
+= Brooks Running Shoes                                   $ 111.44       1 (x of this items) =
+= Nike Shorts                                            $ 45.77        4 (x of this items) =
+= ========================================================================================= =
+= Grand total:                                           $ 676.47                           =
+= Tax:                                                   $ 55.81                            =
+= Grand total with tax:                                  $ 732.28                           =
+= ========================================================================================= =
+= Confirm the transaction (y/Y or n/N): y
+[H[2J[3J /* Clear screen command - system("clear"); */
+= The inventory is updated...                                                                              =
+= ======================================================================================================== =
+= Items number =  Name of Equipment:                                     =    Cost:   =  Current quanity:  =
+= -------------------------------------------------------------------------------------------------------- =
+= Item # 1     =  Nike Basketball Shoes                                  =  $ 145.99  =        20          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #2      =  Under Armour T-shirt                                   =  $ 29.99   =        30          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #3      =  Brooks Running Shoes                                   =  $ 111.44  =        10          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #4      =  Asics Running Shoes                                    =  $ 165.88  =        20          =
+= -------------------------------------------------------------------------------------------------------- =
+= Item #5      =  Nike Shorts                                            =  $ 45.77   =        73          =
+= ======================================================================================================== =
+= Terminating the program!
+==218== 
+==218== HEAP SUMMARY:
+==218==     in use at exit: 0 bytes in 0 blocks
+==218==   total heap usage: 21 allocs, 21 frees, 84,349 bytes allocated
+==218== 
+==218== All heap blocks were freed -- no leaks are possible
+==218== 
+==218== For lists of detected and suppressed errors, rerun with: -s
+==218== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+# exit
+
+Script done on 2022-02-25 18:57:14-05:00 [COMMAND_EXIT_CODE="0"]

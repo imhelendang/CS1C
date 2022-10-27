@@ -1,0 +1,57 @@
+Script started on 2022-02-18 01:22:16-05:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="137" LINES="38"]
+# date
+Fri Feb 18 01:22:17 EST 2022
+# ls -l
+total 12
+-rw-r--r-- 1 root root  197 Feb 18 01:13 Makefile
+-rw-r--r-- 1 root root 4457 Feb 18 01:21 hw06.cpp
+-rw-r--r-- 1 root root    0 Feb 18 01:22 hw06.scr
+# make all
+g++ -std=c++14 -Wall -g hw06.cpp -o hw06
+# ls -l
+total 84
+-rw-r--r-- 1 root root   197 Feb 18 01:13 Makefile
+-rwxr-xr-x 1 root root 73672 Feb 18 01:22 hw06
+-rw-r--r-- 1 root root  4457 Feb 18 01:21 hw06.cpp
+-rw-r--r-- 1 root root     0 Feb 18 01:22 hw06.scr
+# valgrind ./hw  06
+==27== Memcheck, a memory error detector
+==27== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==27== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==27== Command: ./hw06
+==27== 
+= The original string is: abcdefghijklmnopqrstuvwxyz
+= Calling reverse(). Please enter the indices for begin and end: 
+11
+18
+= Reverse letters (using recursive function) [11-18]: abcdefghijksrqponmltuvwxyz
+= Reverse letters (using iterative function) [11-18]: abcdefghijksrqponmltuvwxyz
+= Continue? (y/n) y
+
+= Calling reverse(). Please enter the indices for begin and end: 
+4
+22
+= Reverse letters (using recursive function) [4-22]: abcdwvutsrqponmlkjihgfexyz
+= Reverse letters (using iterative function) [4-22]: abcdwvutsrqponmlkjihgfexyz
+= Continue? (y/n) y
+
+= Calling reverse(). Please enter the indices for begin and end: 
+0
+25
+= Reverse letters (using recursive function) [0-25]: zyxwvutsrqponmlkjihgfedcba
+= Reverse letters (using iterative function) [0-25]: zyxwvutsrqponmlkjihgfedcba
+= Continue? (y/n) n
+
+= Terminating the program!
+==27== 
+==27== HEAP SUMMARY:
+==27==     in use at exit: 0 bytes in 0 blocks
+==27==   total heap usage: 4 allocs, 4 frees, 74,779 bytes allocated
+==27== 
+==27== All heap blocks were freed -- no leaks are possible
+==27== 
+==27== For lists of detected and suppressed errors, rerun with: -s
+==27== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+# exit
+
+Script done on 2022-02-18 01:22:54-05:00 [COMMAND_EXIT_CODE="0"]

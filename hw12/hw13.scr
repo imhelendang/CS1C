@@ -1,0 +1,126 @@
+Script started on 2022-04-21 19:58:41-04:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="152" LINES="42"]
+# date
+Thu Apr 21 19:58:42 EDT 2022
+# ls -l
+total 20
+-rw-r--r-- 1 root root  285 Apr 21 14:38 Makefile
+-rw-r--r-- 1 root root 8046 Apr 21 19:50 hw13.cpp
+-rw-r--r-- 1 root root    0 Apr 21 19:58 hw13.scr
+-rw-r--r-- 1 root root 8017 Apr 21 14:54 queue.h
+# make all
+g++     hw13.cpp   -o hw13
+ls # ls -l
+ls: cannot access 'ls': No such file or directory
+# la -l
+sh: 5: la: not found
+# l ls -l
+total 192
+-rw-r--r-- 1 root root    285 Apr 21 14:38 Makefile
+-rwxr-xr-x 1 root root 111000 Apr 21 19:58 hw13
+-rw-r--r-- 1 root root   8046 Apr 21 19:50 hw13.cpp
+-rw-r--r-- 1 root root      0 Apr 21 19:58 hw13.scr
+-rw-r--r-- 1 root root   8017 Apr 21 14:54 queue.h
+# valgrind ./hw13
+==147== Memcheck, a memory error detector
+==147== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==147== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==147== Command: ./hw13
+==147== 
+
+= WORK WITH OBJECT TYPE OF INTEGER!
+
+= Add 6 elements to the queue!
+= The complete object: 
+6 5 4 3 2 1 
+= Press any key to continue..k
+
+= Then delete 4 elements from the queue!
+6 5 4 3 
+= Press any key to continue..k
+
+= Now add 5 elements to the queue!
+= The queue now is full. Trying to add another element to the queue using try catch method to catch error.
+= Ooops! The queue currently is full. Can't add more items into the queue!
+
+= The complete object: 
+2 1 12 15 20 100 
+= Press any key to continue..k
+
+= Then delete 3 elements from the queue!
+2 1 12 
+
+= Deleting the whole queue before exiting!
+15 20 100 
+= Try to delete from an empty queue using try catch method!
+= Ooops! The queue currently is empty. Can't remove an item from an empty queue!
+
+
+= WORK WITH OBJECT TYPE OF DOUBLE!
+
+= Add 6 elements to the queue!
+= The complete object: 
+6.00 5.00 4.00 3.00 2.00 1.00 
+= Press any key to continue..k
+
+= Then delete 4 elements from the queue!
+6.00 5.00 4.00 3.00 
+= Press any key to continue..k
+
+= Now add 5 elements to the queue!
+= The queue now is full. Trying to add another element to the queue using try catch method to catch error.
+= Ooops! The queue currently is full. Can't add more items into the queue!
+
+= The complete object: 
+2.00 1.00 12.35 15.62 20.19 100.04 
+= Press any key to continue..k
+
+= Then delete 3 elements from the queue!
+2.00 1.00 12.35 
+
+= Deleting the whole queue before exiting!
+15.62 20.19 100.04 
+= Try to delete from an empty queue using try catch method!
+= Ooops! The queue currently is empty. Can't remove an item from an empty queue!
+
+
+= WORK WITH OBJECT TYPE OF STRING!
+
+= Add 6 elements to the queue!
+= The complete object: 
+a b c d e f 
+= Press any key to continue..k
+
+= Then delete 4 elements from the queue!
+a b c d 
+= Press any key to continue..
+k
+
+= Now add 5 elements to the queue!
+= The queue now is full. Trying to add another element to the queue using try catch method to catch error.
+= Ooops! The queue currently is full. Can't add more items into the queue!
+
+= The complete object: 
+e f q w r y 
+= Press any key to continue..k
+
+= Then delete 3 elements from the queue!
+e f q 
+
+= Deleting the whole queue before exiting!
+w r y 
+= Try to delete from an empty queue using try catch method!
+= Ooops! The queue currently is empty. Can't remove an item from an empty queue!
+
+= Temrinating the program!
+==147== 
+==147== HEAP SUMMARY:
+==147==     in use at exit: 0 bytes in 0 blocks
+==147==   total heap usage: 33 allocs, 33 frees, 77,120 bytes allocated
+==147== 
+==147== All heap blocks were freed -- no leaks are possible
+==147== 
+==147== For lists of detected and suppressed errors, rerun with: -s
+==147== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+# k exit
+
+Script done on 2022-04-21 19:59:21-04:00 [COMMAND_EXIT_CODE="0"]

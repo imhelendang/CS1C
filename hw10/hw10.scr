@@ -1,0 +1,42 @@
+Script started on 2022-03-29 11:32:11-04:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="151" LINES="42"]
+# date
+Tue Mar 29 11:32:12 EDT 2022
+# ls -l
+total 16
+-rw-r--r-- 1 root root  196 Mar 19 19:18 Makefile
+-rw-r--r-- 1 root root 8530 Mar 29 11:28 hw10.cpp
+-rw-r--r-- 1 root root    0 Mar 29 11:32 hw10.scr
+# make all
+g++     hw10.cpp   -o hw10
+# ls -l
+total 36
+-rw-r--r-- 1 root root   196 Mar 19 19:18 Makefile
+-rwxr-xr-x 1 root root 19288 Mar 29 11:32 hw10
+-rw-r--r-- 1 root root  8530 Mar 29 11:28 hw10.cpp
+-rw-r--r-- 1 root root     0 Mar 29 11:32 hw10.scr
+# valgrid   nd ./hw1              ./hw10
+
+************************************** 
+*           Running HW10             * 
+*      Programmed by Jade Tran       * 
+*      CS1C TTh & 12:30 to 2:50      * 
+************************************** 
+
+v  double values: 0 100.5 0 
+v2 double values (after copy, set): 25 100.5 0 
+
+v3 double values: 0 0 3.3 
+v4 double values: 0 0 4.4 0 
+v3 double values (after assignment): 0 0 4.4 0 
+
+v5 double values: 0 0 0 0 0 0 0 0 0 0 
+fill up v6 with five doubles
+1
+2
+3.4
+6.2
+7.6
+v6 double values: 1 2 3.4 6.2 7.6 
+# exit
+
+Script done on 2022-03-29 11:32:41-04:00 [COMMAND_EXIT_CODE="0"]

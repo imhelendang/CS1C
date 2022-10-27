@@ -1,0 +1,120 @@
+Script started on 2022-01-21 00:47:48-05:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="129" LINES="38"]
+# Script started, file is hw01.scr^[[C     r
+sh: 1: Script: not found
+# date
+Fri Jan 21 00:48:03 EST 2022
+# ls -l
+total 84
+-rw-r--r-- 1 root root   227 Jan 20 20:40 Makefile
+-rw-r--r-- 1 root root  7246 Jan 21 00:46 function.cpp
+-rw-r--r-- 1 root root   809 Jan 20 23:46 function.h
+-rw-r--r-- 1 root root     0 Jan 21 00:47 hw01.scr
+-rw-r--r-- 1 root root  1214 Jan 21 00:21 main.cpp
+-rw-r--r-- 1 root root   198 Jan 21 00:46 output.txt
+-rwxr-xr-x 1 root root 55776 Jan 19 01:13 run-tests
+-rw-r--r-- 1 root root    34 Jan 20 15:18 text.txt
+# make
+g++    -c -o main.o main.cpp
+g++    -c -o function.o function.cpp
+g++ -Wall -Werror -Wpedantic -std=gnu99 -O0 -g -o run main.o function.o
+# ls -l
+total 176
+-rw-r--r-- 1 root root   227 Jan 20 20:40 Makefile
+-rw-r--r-- 1 root root  7246 Jan 21 00:46 function.cpp
+-rw-r--r-- 1 root root   809 Jan 20 23:46 function.h
+-rw-r--r-- 1 root root 41064 Jan 21 00:48 function.o
+-rw-r--r-- 1 root root     0 Jan 21 00:47 hw01.scr
+-rw-r--r-- 1 root root  1214 Jan 21 00:21 main.cpp
+-rw-r--r-- 1 root root  6312 Jan 21 00:48 main.o
+-rw-r--r-- 1 root root   198 Jan 21 00:46 output.txt
+-rwxr-xr-x 1 root root 40320 Jan 21 00:48 run
+-rwxr-xr-x 1 root root 55776 Jan 19 01:13 run-tests
+-rw-r--r-- 1 root root    34 Jan 20 15:18 text.txt
+# valgrind ./run
+==30== Memcheck, a memory error detector
+==30== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==30== Command: ./run
+==30== 
+
+
+
+= ==================================================================== =
+= Part a - Working with a three digits number and operations.          =
+= ==================================================================== =
+= The generated number is: 868                                         =
+= 1. Sum the digits.                                                   =
+= 2. Triple the number.                                                =
+= 3. Reverse the digits.                                               =
+= 4. Exit.                                                             =
+= Please choose one of these operations: 1
+= The result is: 22!
+Press any key to continue..k
+
+
+
+= ==================================================================== =
+= Part a - Working with a three digits number and operations.          =
+= ==================================================================== =
+= The generated number is: 868                                         =
+= 1. Sum the digits.                                                   =
+= 2. Triple the number.                                                =
+= 3. Reverse the digits.                                               =
+= 4. Exit.                                                             =
+= Please choose one of these operations: 2
+= The result is: 653972032!
+Press any key to continue..k
+
+
+
+= ==================================================================== =
+= Part a - Working with a three digits number and operations.          =
+= ==================================================================== =
+= The generated number is: 868                                         =
+= 1. Sum the digits.                                                   =
+= 2. Triple the number.                                                =
+= 3. Reverse the digits.                                               =
+= 4. Exit.                                                             =
+= Please choose one of these operations: 3
+= The result is: 868!
+Press any key to continue..k
+
+
+
+= ==================================================================== =
+= Part a - Working with a three digits number and operations.          =
+= ==================================================================== =
+= The generated number is: 868                                         =
+= 1. Sum the digits.                                                   =
+= 2. Triple the number.                                                =
+= 3. Reverse the digits.                                               =
+= 4. Exit.                                                             =
+= Please choose one of these operations: 4
+= ==================================================================== =
+= Part b - Working with random numbers and array.                      =
+= ==================================================================== =
+= The array is successfully printed in an external file - output.txt!  =
+= ==================================================================== =
+= Part c - Working with enum and string variable.                      =
+= ==================================================================== =
+= Guessing dates of the third week of January                          =
+= The result is: Saturday: 01/22/2022                                  =
+= Terminating the program!                                             =
+= ==================================================================== =
+==30== 
+==30== HEAP SUMMARY:
+==30==     in use at exit: 0 bytes in 0 blocks
+==30==   total heap usage: 21 allocs, 21 frees, 92,362 bytes allocated
+==30== 
+==30== All heap blocks were freed -- no leaks are possible
+==30== 
+==30== For lists of detected and suppressed errors, rerun with: -s
+==30== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+# ls
+Makefile  function.cpp	function.h  function.o	hw01.scr  main.cpp  main.o  output.txt	run  run-tests	text.txt
+# cat output.txt
+= Print out the numbers in the (unsorted) array list: 35, 199, 111, 383, 5367, 23, 45, 1, 467, 78.
+= Print out the numbers in the (sorted)   array list: 1, 23, 35, 45, 78, 111, 199, 383, 467, 5367.
+# exit
+
+Script done on 2022-01-21 00:49:18-05:00 [COMMAND_EXIT_CODE="0"]

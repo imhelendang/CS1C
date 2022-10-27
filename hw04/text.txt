@@ -1,0 +1,210 @@
+3
+Daniela Renate
+29485
+12
+24
+2009
+Architect
+485,394
+505-473-7704
+F
+32
+5434222
+Big Boss
+6
+4
+3
+Tim Olav
+45529
+12
+15
+2008
+Architect
+345,596
+582-333-0706
+M
+37
+5434223
+Big Boss
+6
+7
+1
+Katie Couric
+77777
+3
+1
+2005
+News Reporter
+500,500
+203-555-6789
+F
+58
+2
+Mary Coder
+65432
+2
+8
+2010
+Programmer
+770,123
+203-555-6789
+F
+28
+6543222
+Mary Leader
+7
+1
+1
+1
+Jimmy Fallon
+12345
+8
+31
+2014
+Talk Show Host
+100,000
+819-123-4567
+M
+40
+2
+Sam Software
+54321
+12
+24
+2011
+Programmer
+223,000
+819-123-4567
+M
+21
+5432122
+Joe Boss
+4
+1
+0
+3
+Sally Designer
+87878
+02
+08
+2003
+Architect
+870,123
+310-555-8888
+F
+38
+6543422
+Big Boss
+8
+11
+3
+Alex Arch
+88888
+12
+24
+2009
+Architect
+323,000
+819-123-4444
+M
+31
+5434222
+Big Boss
+5
+4
+1
+Stephan Colbert
+12346
+5
+8
+2015
+Comedian
+70,123
+310-555-5555
+M
+51
+1
+James Corden
+87654
+12
+25
+2014
+Talk Show Host
+900,000
+202-918-2132
+M
+37
+1
+Fabia Marija
+23850
+11
+30
+2013
+Comedian
+80,839
+202-918-2132
+M
+29
+2
+Antigone Gunn
+56283
+9
+4
+2008
+Programmer
+250,890
+703-703-1234
+F
+25
+5432122
+Joe Boss
+3
+0
+1
+3
+Robert Sandip
+93852
+6
+24
+2010
+Architect
+340,575
+308-896-3793
+M
+30
+5434223
+Big Boss
+3
+3
+2
+Timur Rakesh
+48294
+12
+12
+2012
+Programmer
+250,395
+582-465-3365
+M
+29
+5432134
+Joe Boss
+6
+1
+1
+2
+Justina Atha
+92459
+5
+5
+2016
+Programmer
+354,485
+505-644-3635
+F
+27
+5432122
+Joe Boss
+3
+1
+1

@@ -1,0 +1,91 @@
+Script started on 2022-02-15 15:53:46-05:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="156" LINES="46"]
+# date
+Tue Feb 15 15:53:47 EST 2022
+# ls -l 
+total 84
+-rw-r--r-- 1 root root   737 Feb 15 15:17 Makefile
+-rw-r--r-- 1 root root   514 Feb 15 15:39 date.cpp
+-rw-r--r-- 1 root root  1197 Jan 27 23:25 date.h
+-rw-r--r-- 1 root root  6398 Feb 15 15:35 employee.cpp
+-rw-r--r-- 1 root root  3764 Feb 15 15:40 employee.h
+-rw-r--r-- 1 root root 17217 Feb 15 15:51 hw04.cpp
+-rw-r--r-- 1 root root     0 Feb 15 15:53 hw04.scr
+-rw-r--r-- 1 root root  7459 Feb 15 15:48 newOutput.txt
+-rw-r--r-- 1 root root  7459 Feb 15 15:48 output.txt
+-rw-r--r-- 1 root root  4550 Feb 15 15:34 programmer.cpp
+-rw-r--r-- 1 root root  2750 Feb 15 15:29 programmer.h
+-rw-r--r-- 1 root root  4013 Feb 15 15:48 software.cpp
+-rw-r--r-- 1 root root  2536 Feb 15 15:46 software.h
+-rw-r--r-- 1 root root  1246 Feb  4 20:59 text.txt
+# make all
+g++ -std=c++14 -Wall -g -c date.cpp -o date.o 
+g++ -std=c++14 -Wall -g -c employee.cpp -o employee.o
+g++ -std=c++14 -Wall -g -c programmer.cpp -o programmer.o
+g++ -std=c++14 -Wall -g -c software.cpp -o software.o
+g++ -std=c++14 -Wall -g hw04.cpp -o hw04 date.o employee.o programmer.o software.o
+# ls -l 
+total 796
+-rw-r--r-- 1 root root    737 Feb 15 15:17 Makefile
+-rw-r--r-- 1 root root    514 Feb 15 15:39 date.cpp
+-rw-r--r-- 1 root root   1197 Jan 27 23:25 date.h
+-rw-r--r-- 1 root root  44064 Feb 15 15:53 date.o
+-rw-r--r-- 1 root root   6398 Feb 15 15:35 employee.cpp
+-rw-r--r-- 1 root root   3764 Feb 15 15:40 employee.h
+-rw-r--r-- 1 root root 157208 Feb 15 15:53 employee.o
+-rwxr-xr-x 1 root root 263056 Feb 15 15:53 hw04
+-rw-r--r-- 1 root root  17217 Feb 15 15:51 hw04.cpp
+-rw-r--r-- 1 root root      0 Feb 15 15:53 hw04.scr
+-rw-r--r-- 1 root root   7459 Feb 15 15:48 newOutput.txt
+-rw-r--r-- 1 root root   7459 Feb 15 15:48 output.txt
+-rw-r--r-- 1 root root   4550 Feb 15 15:34 programmer.cpp
+-rw-r--r-- 1 root root   2750 Feb 15 15:29 programmer.h
+-rw-r--r-- 1 root root 128800 Feb 15 15:53 programmer.o
+-rw-r--r-- 1 root root   4013 Feb 15 15:48 software.cpp
+-rw-r--r-- 1 root root   2536 Feb 15 15:46 software.h
+-rw-r--r-- 1 root root 126808 Feb 15 15:53 software.o
+-rw-r--r-- 1 root root   1246 Feb  4 20:59 text.txt
+# valgrind ./hw04
+==43== Memcheck, a memory error detector
+==43== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==43== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==43== Command: ./hw04
+==43== 
+= All information's been entered. To verify, check output.txt file!
+
+= Katie Couric has the same phone number as one of the programmers that is: 203-555-6789
+= Changing the employee's phone number. Please enter new phone number for Katie Couric
+505-658-2839
+= Successfully update phone number!
+
+= Jimmy Fallon has the same phone number as one of the programmers that is: 819-123-4567
+= Changing the employee's phone number. Please enter new phone number for Jimmy Fallon
+423-907-3648
+= Successfully update phone number!
+
+= James Corden and Fabia Marija have the same phone number that is: 202-918-2132
+= Please choose either one of the employees to change the phone number!
+= To change James Corden's enter 3; else, enter 4 to change Fabia Marija's. 3
+= Changing James Corden's phone number. Please update his/her number: 203-878-1904
+
+= Successfully update phone number!
+= Updating one of the employees to update their age.
+= Please enter: [0] for Katie Couric or [1] for Jimmy Fallon or [2] for Stephan Colbert or [3] for James Corden or [4] for Fabia Marija.
+1
+= Please enter a number to add: 2
+= Jimmy Fallon's age has been updated. He is now 2 years older!
+
+= All information's been updated. To verify, check newOutput.txt file!
+
+= Terminating the program!
+==43== 
+==43== HEAP SUMMARY:
+==43==     in use at exit: 0 bytes in 0 blocks
+==43==   total heap usage: 27 allocs, 27 frees, 101,302 bytes allocated
+==43== 
+==43== All heap blocks were freed -- no leaks are possible
+==43== 
+==43== For lists of detected and suppressed errors, rerun with: -s
+==43== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+# exit
+
+Script done on 2022-02-15 15:54:58-05:00 [COMMAND_EXIT_CODE="0"]
